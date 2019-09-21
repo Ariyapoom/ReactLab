@@ -44,7 +44,7 @@ export default class WordCard extends Component{
                 <h1>attempt = {this.state.attempt}</h1>
                 {Array.from(this.state.chars).map(( c , i ) => <CharacterCard value = {c} key = {i} attempt= {this.state.attempt} activationHandler={this.activationHandler}></CharacterCard>)}
                 <h2>{this.state.completed? 'You Win' : ''}</h2>
-                
+                <h2>{this.state.attempt == 5 && !this.state.completed ? 'You Lose' : ''}</h2>
             </div>
             
         );

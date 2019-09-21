@@ -8,8 +8,10 @@ export default class CharacterCard extends Component{
         }
     }
     componentDidUpdate(prevProps){
-        if(prevProps.attempt != this.props.attempt){
-        this.setState({active: false})
+        if(this.props.attempt != 5){
+            if(prevProps.attempt != this.props.attempt){
+                this.setState({active: false})
+            }
         }
     }
        
