@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  color: red;
 }
 
 .App-logo {
@@ -34,4 +35,16 @@
  .activeCard {
   color: green;
   background: rgb(192, 255, 203);
+ }
+ .attemp {
+   color: blue;
+ }
+ .win{
+   color: green;
+ }
+ .lose {
+   color: crimson;
+ }
+ .word{
+   color: black;
  }
