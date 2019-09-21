@@ -1,12 +1,13 @@
 import React , { Component } from 'react'
 import './App.css'
 import WordCard from './WordCard'
-
+let words = ['monster','hello','system','hydrogen','oxigen']
 class App extends Component{
   render(){
+    let num = Math.floor(Math.random()*words.length);
     return(
       <div>
-        <WordCard value = 'hello'></WordCard>
+        <WordCard value = {words[num]}></WordCard>
       </div>
     );
   }
